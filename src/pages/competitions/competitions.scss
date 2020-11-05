@@ -1,0 +1,21 @@
+page-competitions{
+  .item-android,
+  .item-ios,
+  .item-md{
+    ion-thumbnail{
+      min-height: auto;
+      min-width: 30px;
+      float: left;
+      img{
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+      }
+    }
+    h2{
+      line-height: 1rem;
+      display: inline;
+      margin: 0px;
+    }
+  }
+}

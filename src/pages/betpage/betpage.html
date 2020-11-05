@@ -1,0 +1,33 @@
+<ion-header color="primary">
+  <ion-toolbar color="primary">
+    <ion-navbar>
+      <ion-title>
+        Scommesse attive
+      </ion-title>
+    </ion-navbar>
+    <ion-fab bottom right>
+      <button ion-fab mini (click)="deleteList()" *ngIf="matchs.length > 0" ><ion-icon name="trash"></ion-icon></button>
+    </ion-fab>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #generateButton>
+  <ion-list>
+    <ion-item *ngFor="let m of matchs | orderby:'date'" (click)="presentOptions(m.href)">
+      <div class="header-wrapper">
+        <h6>{{m.date | date: 'dd/MM/yyyy hh:mm'}}</h6>
+      </div>
+      <div class="content-wrapper">
+        <h4 class="title-home">{{m.team_home}}</h4>
+        <span>-</span>
+        <h4 class="title-away">{{m.team_away}}</h4>
+        <div class="results-wrapper">
+          {{m.results}}
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+  <generate-buttons></generate-buttons>
+
+</ion-content>

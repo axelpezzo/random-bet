@@ -1,0 +1,66 @@
+betpage{
+  .header{
+    .fab-md{
+      box-shadow: none;
+      margin: 5px;
+      width: 36px;
+      height: 36px;
+      line-height: 0px;
+    }
+  }
+  .list-ios,
+  .list-android{
+    margin: -1px 0 20px 0;
+  }
+  .header-ios .toolbar-ios:last-child .toolbar-background-ios{
+    border-width: 0px;
+  }
+  .item-android,
+  .item-ios,
+  .item-md{
+    padding: 0px 12px;
+    text-align: center;
+    .label-ios{
+      margin: 11px 0px 11px 0;
+    }
+    .item-inner{
+      padding: 0px !important;
+    }
+    .header-wrapper{
+      h6{
+        display: inline-block;
+        margin-bottom: 15px;
+        color: color($colors, contrast_light);
+      }
+    }
+    .content-wrapper{
+      h4{
+        display: inline-block;
+        width: 42%;
+        &.title-home{
+          text-align: right;
+        }
+        &.title-away{
+          text-align: left;
+        }
+      }
+      span{
+        width: 10%;
+        margin: 0px;
+        display: inline-block;
+      }
+      .results-wrapper{
+        font-weight: bold;
+        margin: 10px 0px 0px;
+      }
+    }
+    .icon-md,
+    .icon-ios,
+    .icon-android{
+      font-size: 3rem;
+    }
+    .item-button{
+      height: 30px;
+    }
+  }
+}

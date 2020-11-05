@@ -1,0 +1,22 @@
+<ion-header color="primary">
+  <ion-toolbar color="primary">
+
+    <ion-title>RandomBet</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let comp of comps" (click)="pushPage(comp.id, comp.name)">
+      <ion-thumbnail>
+        <img src={{comp.logo}} />
+      </ion-thumbnail>
+      <h2>{{comp.name}}</h2>
+    </button>
+  </ion-list>
+
+  <footer-buttons></footer-buttons>
+
+</ion-content>
